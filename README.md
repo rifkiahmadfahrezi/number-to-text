@@ -53,7 +53,7 @@ numberToText.convertToText("12346")
 
 * `num` - a string or number.
 * `options` 
-  - `language` - Default: `en-us` - possible Values : `en-us`, 'en-in', 'de', 'tr'
+  - `language` - Default: `en-us` - possible Values : `en-us`, 'en-in', 'de', 'tr', 'id'
   - `separator` - Default: `,` for (en-us and en-in)
   - `case` - Default: `titleCase` - possible Values : `"titleCase" , "lowerCase" , "upperCase"` for (en-us and en-in)
 
