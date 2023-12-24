@@ -39,7 +39,6 @@ class IdConverter extends numberToText.Converter {
         if (splitNum.length === 3 && ones[splitNum.charAt(0)]) {
           splitValues.push(ones[splitNum.charAt(0)])
           splitValues.push('Ratus')
-          // if(ones[splitNum.charAt(1)] || ones[splitNum.charAt(2)]) splitValues.push('dan')
         } if (splitNum.length >= 2) {
           if (splitNum.substr(-2, 1) === '1') {
             splitValues.push(ones[splitNum.substr(-2, 2)])
@@ -62,7 +61,7 @@ class IdConverter extends numberToText.Converter {
         valueArray.push(splitValues.join(' '))
       }
     }
-    let result = caseFunction.call((valueArray.join(options.separator + ' ')))
+    const result = caseFunction.call((valueArray.join(options.separator + ' ')))
     if (result.includes('Satu Ratus') || result.includes('satu ratus') || result.includes('SATU RATUS')) {
       return result.replace(/Satu Ratus/i, 'Seratus')
     }
